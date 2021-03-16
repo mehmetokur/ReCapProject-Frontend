@@ -1,0 +1,19 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">UserId</th>
+        <th scope="col">Şirket Adı</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let carDto of cardtos">
+            <td scope="row" >{{carDto.carId}}</td>
+            <td>{{carDto.description}}</td>
+            <td>{{carDto.brandName}}</td>
+            <td>{{carDto.colorName}}</td>
+            <td>{{carDto.dailyPrice}}</td>
+
+      </tr>
+    </tbody>
+  </table>
